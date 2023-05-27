@@ -1,18 +1,14 @@
-def add(a, b):  # บวก
+def add(a, b):  
     return a + b
 
-
-def subtract(a, b):  # ลบ
+def subtract(a, b):  
     return a - b
 
-
-def multiply(a, b):   # คูณ
+def multiply(a, b):
     return a * b
 
-
-def divide(a, b):  # หาร
+def divide(a, b):
     return a / b
-
 
 # Main program
 while True:
@@ -47,6 +43,7 @@ while True:
         print(num1, "x", num2, "=", result)
         # print("Result:", result)
     elif choice == '4':
+        # Dividing a number by zero(0) is an error, and check that num2 is not zero(0).
         if num2 != 0:
             result = divide(num1, num2)
             print(num1, "/", num2, "=", result)
